@@ -1,0 +1,8 @@
+name: HelloWorld-onpush
+on: push
+jobs:
+  example-onpushjob:
+    runs-on: ubuntu-latest
+    steps:
+      - name: example-step
+        run: echo "Hello World! shopping catalogue"
