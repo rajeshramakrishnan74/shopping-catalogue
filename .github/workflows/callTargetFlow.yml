@@ -1,8 +1,6 @@
 # .github/workflows/callTargetFlow.yml
 name: CallTarget
-on:
-  push:
-    branches: [ main ]
+on:  workflow_dispatch
 
 jobs:
   call-deploy:
