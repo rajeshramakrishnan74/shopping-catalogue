@@ -3,16 +3,7 @@ name: CallTarget
 on:  workflow_dispatch
 
 jobs:
-  call-deploy:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v5
-      - name: Checkout
-        uses: actions/checkout@v5
-        with:
-          repository: shopping-carts
-          token: ${{ secrets.GITHUB_TOKEN }}
-          ref: rajeshramakrishnan74/shopping-carts/.github/workflows/CalledFromAnotherRepo.yml
-          path:  shopping-carts
-    
+  call-workflow:
+    uses:  rajeshramakrishnan74/shopping-carts/.github/workflows/CalledFromAnotherRepo.yml@main
+    secrets: inherit
+        
