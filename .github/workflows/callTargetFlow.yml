@@ -4,8 +4,15 @@ on:  workflow_dispatch
 
 jobs:
   call-deploy:
-    uses: rajeshramakrishnan74/shopping-carts/.github/workflows/CalledFromAnotherRepo.yml@main
-    with:
-      env: sit
-    secrets:
-       personal_access_token: ${{ secrets.TriggerToken }}
+    runs-on: latest_upuntu
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          repository: shopping-carts
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: .github/workflows/CalledFromAnotherRepo.yml
+          path:  shopping-carts
+    
