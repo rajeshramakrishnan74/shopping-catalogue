@@ -11,9 +11,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v5
         with:
-          owner: rajeshramakrishnan74
           repository: shopping-carts
           token: ${{ secrets.GITHUB_TOKEN }}
-          ref: .github/workflows/CalledFromAnotherRepo.yml
+          ref: rajeshramakrishnan74/shopping-carts/.github/workflows/CalledFromAnotherRepo.yml
           path:  shopping-carts
     
