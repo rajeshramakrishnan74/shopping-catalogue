@@ -7,4 +7,5 @@ jobs:
        uses:  rajeshramakrishnan74/shopping-carts/.github/workflows/CalledFromAnotherRepo.yml@54dd2329f1c0090760a2f557ad790c522b2a8461
        with:
            env: '.github/labeler.yml'
-       secrets: inherit
+       secrets: 
+        personal_access_token: ${{ secrets.TriggerToken }}
