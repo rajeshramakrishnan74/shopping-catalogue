@@ -10,5 +10,5 @@ jobs:
     with:
       env: sit
     secrets:
-      AWS_ACCESS_KEY_ID: ${{ secrets.GITHUB_TOKEN }}
-      AWS_SECRET_ACCESS_KEY: ${{ secrets.GITHUB_TOKEN }}
+      ACCESS_KEY_ID: ${{ secrets.GITHUB_TOKEN }}
+      SECRET_ACCESS_KEY: ${{ secrets.GITHUB_TOKEN }}
