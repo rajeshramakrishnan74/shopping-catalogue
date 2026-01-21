@@ -4,6 +4,6 @@ on:  workflow_dispatch
 
 jobs:
   call-workflow:
-    uses:  rajeshramakrishnan74/shopping-carts/.github/workflows/CalledFromAnotherRepo.yml@main
+    uses:  rajeshramakrishnan74/shopping-carts/.github/workflows/CalledFromAnotherRepo.yml@v2
     secrets: inherit
         
